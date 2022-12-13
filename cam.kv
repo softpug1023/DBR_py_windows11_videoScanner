@@ -1,7 +1,28 @@
 <ScrolllabelLabel>:
+    text:'Scan History:'
+    pos_hint:{'x': .6, 'y': .0}
+    color: (1, 0, .65, 1)
     Label:
         text: root.text
         font_size: 13
         text_size: self.width, None
         size_hint_y: None
         height: self.texture_size[1]
+<CameraButton>:
+    background_normal : './assets/normal.jpg'
+    background_down :'./assets/down.jpg'
+    size_hint : (.15, .2)
+    pos_hint : {"x":0.45, "y":0.0}
+
+        
+
+<ScanResultLabel>:
+    pos_hint: {'x': .1, 'y': .25}
+    size_hint: .4, .4
+    text:"No result:"
+    font_size: 14
+        
+<VideoFrame>:
+    source: './assets/softpug.jpg'
+    size_hint:.4, .4
+    pos_hint:{'x': .1, 'y': .6}
